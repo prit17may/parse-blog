@@ -18,17 +18,27 @@ $(function () {
 //  });
 
   var Blog = Parse.Object.extend("Blog");
-  var Blogs = Parse.Collection.extend({
-    model: Blog
-  });
+  log(Blog);
+//  var Blogs = Parse.Collection.extend({
+//    model: Blog
+//  });
 
-  var blogs = new Blogs();
-  blogs.fetch({
-    success: function (blogs) {
-      log(blogs);
-    },
-    error: function (blogs, error) {
-      log(error);
-    }
-  });
+//  var blogs = new Blogs();
+//  blogs.fetch({
+//    success: function (blogs) {
+//      log(blogs);
+//    },
+//    error: function (blogs, error) {
+//      log(error);
+//    }
+//  });
+
+  //Blog View
+//  var BlogsView = Parse.View.extend({
+//    template: Handlebars.compile($('#blogs-tpl').html()),
+//    render: function () {
+//      var collection = {blog: this.collection.toJSON()};
+//      this.$el.html(this.template(collection));
+//    }
+//  });
 });
