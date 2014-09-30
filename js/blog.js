@@ -18,10 +18,10 @@ $(function () {
 //  });
 
   var Blog = Parse.Object.extend("Blog");
-  log(Blog);
-//  var Blogs = Parse.Collection.extend({
-//    model: Blog
-//  });
+  var Blogs = Parse.Collection.extend({
+    model: Blog
+  });
+  log(Blogs);
 
 //  var blogs = new Blogs();
 //  blogs.fetch({
